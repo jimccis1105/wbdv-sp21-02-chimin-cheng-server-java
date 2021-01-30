@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2576b498-d504-4888-9c56-fd3da3c13a13" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/profile/profile.template.client.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/profile/profile.template.client.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +15,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -68,7 +67,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1611835937350</updated>
-      <workItem from="1611835938531" duration="15086000" />
+      <workItem from="1611835938531" duration="35436000" />
     </task>
     <servers />
   </component>

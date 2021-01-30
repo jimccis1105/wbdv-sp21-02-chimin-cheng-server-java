@@ -1,0 +1,71 @@
+.wbdv-sticky-top {
+    position: fixed;
+    width: 100%;
+    background-color: dodgerblue;
+    z-index: 1;
+}
+
+.wbdv-padding-5px {
+    padding: 5px;
+}
+
+.color-white {
+    color:white;
+}
+
+.padding-top-icon {
+    padding-top:5px;
+}
+
+.padding-top-h4 {
+    padding-top: 5px;
+}
+
+.padding-top-input {
+    padding-top:2px;
+}
+
+.padding-left {
+    padding-left:30px;
+}
+
+.btn {
+    display:block;
+    background-color:red;
+    border-radius: 50%;
+    border: 1px solid red;
+}
+
+.course-header {
+    background-color: lightgrey;
+    padding-top: 30px;
+}
+
+body {
+    background-color:lightgrey;
+}
+
+.tb-white {
+    background-color:white;
+}
+
+tbody {
+    background-color:white;
+}
+
+.color-dark-grey {
+    background-color: darkgrey;
+}
+
+.course {
+    background-color: white;
+    border-top: 1px solid grey;
+    border-right: 1px solid grey;
+    border-left: 1px solid grey;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.btn-margin {
+    margin:30px;
+}
