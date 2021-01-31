@@ -1,0 +1,29 @@
+.list-group-margin{
+    margin-left:0;
+}
+.course-title-padding{
+    padding-left:20px;
+    padding-right:20px;
+    padding-top:5px;
+}
+.course-title-color{
+    color:whitesmoke;
+}
+.course-title-display{
+    display:inline;
+    padding-left:15px;
+}
+.navs-background-color{
+    background-color:darkgrey;
+}
+.list-group-item{
+    margin-bottom:10px;
+    background-color:darkgrey;
+}
+.nav-link{
+    color:black;
+}
+.nav-topic-item{
+    margin-right:10px;
+    background-color:lightgrey;
+}

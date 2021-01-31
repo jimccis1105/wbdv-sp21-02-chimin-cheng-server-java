@@ -2,9 +2,106 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link href="../styles.css" rel="stylesheet">
+    <link href="./editor.style.client.css" rel="stylesheet"/>
+    <title>Course Editor</title>
 </head>
 <body>
-<h1>Editor Page</h1>
+<ul class="nav nav-tabs navs-background-color">
+    <div class="course-title-padding">
+        <i class="fas fa-times"></i>
+        <h4 class="course-title-display course-title-color">
+            CS5610-WebDev
+        </h4>
+    </div>
+    <li class="nav-item">
+        <a class="nav-link" aria-current="page" href="#">
+            Build
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link active" href="#">Pages</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#">Theme</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#">Store</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#">Apps</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#">Settings</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">
+            <i class="fa fa-plus"></i>
+        </a>
+    </li>
+</ul>
+<br/>
+<div class="container list-group-margin">
+    <div class="row">
+        <div class="col-4">
+            <ul class="list-group">
+                <li class="list-group-item active">
+                    Module 1 - jQuery
+                    <i class="float-right fas fa-times"></i>
+                </li>
+                <li class="list-group-item">
+                    Module 2 - React
+                    <i class="float-right fas fa-times"></i>
+                </li>
+                <li class="list-group-item">
+                    Module 3 - Redux
+                    <i class="float-right fas fa-times"></i>
+                </li>
+                <li class="list-group-item">
+                    Module 4 - Native
+                    <i class="float-right fas fa-times"></i>
+                </li>
+                <li class="list-group-item">
+                    Module 5 - Angular
+                    <i class="float-right fas fa-times"></i>
+                </li>
+                <li class="list-group-item">
+                    Module 6 - Node
+                    <i class="float-right fas fa-times"></i>
+                </li>
+                <li class="list-group-item">
+                    Module 7 - Mongo
+                    <i class="float-right fas fa-times"></i>
+                </li>
+            </ul>
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">
+                <i class="fa fa-plus float-right"></i>
+            </a>
+        </div>
+        <div class="col-8">
+            <ul class="nav nav-pills">
+                <li class="nav-item nav-topic-item">
+                    <a class="nav-link" aria-current="page" href="#">Topic 1</a>
+                </li>
+                <li class="nav-item nav-topic-item">
+                    <a class="nav-link active" href="#">Topic 2</a>
+                </li>
+                <li class="nav-item nav-topic-item">
+                    <a class="nav-link" href="#">Topic 3</a>
+                </li>
+                <li class="nav-item nav-topic-item">
+                    <a class="nav-link" href="#">Topic 4</a>
+                </li>
+                <li class="nav-item nav-topic-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">
+                        <i class="fa fa-plus"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
 </body>
 </html>
