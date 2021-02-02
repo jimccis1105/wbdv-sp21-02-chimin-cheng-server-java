@@ -9,12 +9,12 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>wbdv-sp21-02-chimincheng-server-java</artifactId>
+	<artifactId>wbdv-sp21-02-chimin-cheng-server-java</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>demo</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
-		<java.version>11</java.version>
+<!--		<java.version>11</java.version>-->
 	</properties>
 	<dependencies>
 		<dependency>

@@ -6,9 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="2576b498-d504-4888-9c56-fd3da3c13a13" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/dashboard/dashboard.style.client.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dashboard/dashboard.style.client.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/editor/editor.style.client.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/editor/editor.style.client.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/register/register.style.client.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/register/register.style.client.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/wbdv-sp21-02-chimincheng-server-java-0.0.1-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/wbdv-sp21-02-chimincheng-server-java-0.0.1-SNAPSHOT.jar.original" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wbdv-sp21-02-chimincheng-server-java.iml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +62,8 @@
       <updated>1611835937350</updated>
       <workItem from="1611835938531" duration="48721000" />
       <workItem from="1612234736806" duration="718000" />
+      <workItem from="1612235919707" duration="819000" />
+      <workItem from="1612237328678" duration="476000" />
     </task>
     <servers />
   </component>
