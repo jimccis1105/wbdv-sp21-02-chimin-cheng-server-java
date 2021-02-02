@@ -6,12 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="2576b498-d504-4888-9c56-fd3da3c13a13" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/dashboard/dashboard.template.client.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dashboard/dashboard.template.client.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/editor/editor.template.client.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/editor/editor.template.client.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/login/login.template.client.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login/login.template.client.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/profile/profile.template.client.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/profile/profile.template.client.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/register/register.template.client.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/register/register.template.client.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/dashboard/dashboard.style.client.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dashboard/dashboard.style.client.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editor/editor.style.client.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/editor/editor.style.client.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/register/register.style.client.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/register/register.style.client.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,19 +49,6 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -74,6 +58,7 @@
       <option name="presentableId" value="Default" />
       <updated>1611835937350</updated>
       <workItem from="1611835938531" duration="48721000" />
+      <workItem from="1612234736806" duration="718000" />
     </task>
     <servers />
   </component>
@@ -90,5 +75,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
