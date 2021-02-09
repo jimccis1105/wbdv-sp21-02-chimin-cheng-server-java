@@ -1,13 +1,9 @@
-var users = [
-    {username: "dora77", password: "1234", firstname: "Dora", lastname: "Explorer", role:"FACULTY"},
-    {username: "jim80", password: "4321", firstname: "Jim", lastname: "Butler", role:"STUDENT"},
-    {username: "admin10", password: "2468", firstname: "Admin", lastname: "Lopez", role:"ADMIN"},
-];
-
+var users = [];
 var $usernameFld, $passwordFld;
 var $firstNameFld, $lastNameFld, $roleFld;
 var $removeBtn, $editBtn, $createBtn, $updateBtn;
 var $tbody;
+var userService = new AdminUserServiceClient();
 
 function createUser() {
     var newUser = {
@@ -17,33 +13,40 @@ function createUser() {
         lastname: $lastNameFld.val(),
         role: $roleFld.val(),
     }
-    users.push(newUser);
-    $usernameFld.val("");
-    $passwordFld.val("");
-    $firstNameFld.val("");
-    $lastNameFld.val("");
-    $roleFld.val("");
-    renderUsers(users);
+
+    userService.createUser(newUser)
+        .then(function (actualUser) {
+            users.push(actualUser)
+            $usernameFld.val("");
+            $passwordFld.val("");
+            $firstNameFld.val("");
+            $lastNameFld.val("");
+            $roleFld.val("");
+            renderUsers(users);
+        })
 }
 
 function deleteUser(event) {
-    var button = $(event.target);
-    var index = button.attr("id");
-    users.splice(index, 1);
-    renderUsers(users);
+    var button = $(event.target)
+    var index = button.attr("id")
+    var id = users[index]._id
+
+    userService.deleteUser(id)
+        .then(function (status) {
+            users.splice(index, 1)
+            renderUsers(users);
+        })
 }
 
 var selectedUser = null;
-var user_id = null;
 function selectUser(event) {
     var id = $(event.target).attr("id");
-    selectedUser = users[id];
+    selectedUser = users.find(user => user._id === id);
     $usernameFld.val(selectedUser.username);
     $passwordFld.val(selectedUser.password);
     $firstNameFld.val(selectedUser.firstname);
     $lastNameFld.val(selectedUser.lastname);
     $roleFld.val(selectedUser.role);
-    user_id = id;
 }
 
 function updateUser() {
@@ -52,14 +55,19 @@ function updateUser() {
     selectedUser.firstname = $firstNameFld.val();
     selectedUser.lastname = $lastNameFld.val();
     selectedUser.role = $roleFld.val();
-    users[user_id] = selectedUser;
-    $usernameFld.val("");
-    $passwordFld.val("");
-    $firstNameFld.val("");
-    $lastNameFld.val("");
-    $roleFld.val("");
-    selectedUser = null;
-    renderUsers(users);
+
+    userService.updateUser(selectedUser._id, selectedUser)
+        .then(status => {
+            var index = users.findIndex(user => user._id === selectedUser._id)
+            users[index] = selectedUser;
+            $usernameFld.val("");
+            $passwordFld.val("");
+            $firstNameFld.val("");
+            $lastNameFld.val("");
+            $roleFld.val("");
+            selectedUser = null;
+            renderUsers(users);
+        })
 }
 
 function renderUsers(users) {
@@ -75,7 +83,7 @@ function renderUsers(users) {
           <td>${user.role}</td>
           <td>
               <i id="${i}" class="fa-2x fa fa-times wbdv-remove"></i>
-              <i id="${i}" class="fa-2x fa fa-pencil wbdv-edit"></i>
+              <i id="${user._id}" class="fa-2x fa fa-pencil wbdv-edit"></i>
           </td>
       </tr>
       `)
@@ -88,8 +96,6 @@ function renderUsers(users) {
 
 function main() {
     $tbody = jQuery(".wbdv-tbody");
-    renderUsers(users);
-
     $createBtn = $(".wbdv-create");
     $updateBtn = $(".wbdv-update");
 
@@ -101,5 +107,9 @@ function main() {
 
     $createBtn.click(createUser);
     $updateBtn.click(updateUser);
+    userService.findAllUsers().then(function (actualUsers) {
+        users = actualUsers;
+        renderUsers(users);
+    })
 }
 $(main);
