@@ -21,11 +21,15 @@ function AdminUserServiceClient() {
 
     function findAllUsers() {
         return fetch(self.url).then(function (response) {
-            return response.json()
+            return response.json();
         })
     }
 
-    function findUserById(userId) {}
+    function findUserById(userId) {
+        return fetch(`${self.url}/${userId}`).then(function (response) {
+            return response.json();
+        })
+    }
 
     function updateUser(userId, user) {
         return fetch(`${self.url}/${userId}`, {

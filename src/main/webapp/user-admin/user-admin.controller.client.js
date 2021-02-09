@@ -21,7 +21,7 @@ function createUser() {
             $passwordFld.val("");
             $firstNameFld.val("");
             $lastNameFld.val("");
-            $roleFld.val("");
+            $roleFld.val("Faculty");
             renderUsers(users);
         })
 }
@@ -41,12 +41,14 @@ function deleteUser(event) {
 var selectedUser = null;
 function selectUser(event) {
     var id = $(event.target).attr("id");
-    selectedUser = users.find(user => user._id === id);
-    $usernameFld.val(selectedUser.username);
-    $passwordFld.val(selectedUser.password);
-    $firstNameFld.val(selectedUser.firstname);
-    $lastNameFld.val(selectedUser.lastname);
-    $roleFld.val(selectedUser.role);
+    userService.findUserById(id).then(function (actualUser) {
+        selectedUser = actualUser;
+        $usernameFld.val(selectedUser.username);
+        $passwordFld.val(selectedUser.password);
+        $firstNameFld.val(selectedUser.firstname);
+        $lastNameFld.val(selectedUser.lastname);
+        $roleFld.val(selectedUser.role);
+    })
 }
 
 function updateUser() {
@@ -64,7 +66,7 @@ function updateUser() {
             $passwordFld.val("");
             $firstNameFld.val("");
             $lastNameFld.val("");
-            $roleFld.val("");
+            $roleFld.val("Faculty");
             selectedUser = null;
             renderUsers(users);
         })
@@ -75,15 +77,18 @@ function renderUsers(users) {
     for(var i=0; i<users.length; i++) {
         var user = users[i];
         $tbody
-            .prepend(`
-      <tr>
-          <td>${user.username}</td>
-          <td>${user.firstname}</td>
-          <td>${user.lastname}</td>
-          <td>${user.role}</td>
-          <td>
-              <i id="${i}" class="fa-2x fa fa-times wbdv-remove"></i>
-              <i id="${user._id}" class="fa-2x fa fa-pencil wbdv-edit"></i>
+            .append(`
+      <tr class="wbdv-template wbdv-user wbdv-hidden">
+          <td class="wbdv-username">${user.username}</td>
+          <td>&nbsp;</td>
+          <td class="wbdv-first-name">${user.firstname}</td>
+          <td class="wbdv-last-name">${user.lastname}</td>
+          <td class="wbdv-role">${user.role}</td>
+          <td class="wbdv-actions">
+              <span class="float-right">
+                  <i id="${i}" class="fa-2x fa fa-times wbdv-remove"></i>
+                  <i id="${user._id}" class="fa-2x fa fa-pencil wbdv-edit"></i>
+              </span>
           </td>
       </tr>
       `)
@@ -110,6 +115,6 @@ function main() {
     userService.findAllUsers().then(function (actualUsers) {
         users = actualUsers;
         renderUsers(users);
-    })
+    });
 }
 $(main);
