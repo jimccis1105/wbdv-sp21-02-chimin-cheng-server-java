@@ -41,14 +41,12 @@ function deleteUser(event) {
 var selectedUser = null;
 function selectUser(event) {
     var id = $(event.target).attr("id");
-    userService.findUserById(id).then(function (actualUser) {
-        selectedUser = actualUser;
-        $usernameFld.val(selectedUser.username);
-        $passwordFld.val(selectedUser.password);
-        $firstNameFld.val(selectedUser.firstname);
-        $lastNameFld.val(selectedUser.lastname);
-        $roleFld.val(selectedUser.role);
-    })
+    selectedUser = users.find(user => user._id === id);
+    $usernameFld.val(selectedUser.username);
+    $passwordFld.val(selectedUser.password);
+    $firstNameFld.val(selectedUser.firstname);
+    $lastNameFld.val(selectedUser.lastname);
+    $roleFld.val(selectedUser.role);
 }
 
 function updateUser() {
