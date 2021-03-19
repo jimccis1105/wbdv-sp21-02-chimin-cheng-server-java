@@ -2,7 +2,6 @@ package com.example.wbdvsp2102chiminchengserverjava.models;
 
 public class Widget {
     private String name;
-//    private Integer id;
     private String type;
     private Integer widgetOrder;
     private String text;
@@ -16,9 +15,6 @@ public class Widget {
 
     private Long id;
     private String topicIc;
-//    private String type;
-//    private Integer size;
-//    private String text;
 
     public Long getId() {
         return id;
