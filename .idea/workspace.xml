@@ -8,6 +8,10 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/wbdvsp2102chiminchengserverjava/controllers/WidgetController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/wbdvsp2102chiminchengserverjava/controllers/WidgetController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/wbdvsp2102chiminchengserverjava/models/Widget.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/wbdvsp2102chiminchengserverjava/models/Widget.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/wbdvsp2102chiminchengserverjava/services/WidgetService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/wbdvsp2102chiminchengserverjava/services/WidgetService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/wbdvsp2102chiminchengserverjava/controllers/WidgetController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/wbdvsp2102chiminchengserverjava/controllers/WidgetController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/wbdvsp2102chiminchengserverjava/models/Widget.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/wbdvsp2102chiminchengserverjava/models/Widget.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/wbdvsp2102chiminchengserverjava/services/WidgetService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/wbdvsp2102chiminchengserverjava/services/WidgetService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,17 +60,6 @@
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="DemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="wbdv-sp21-02-chimin-cheng-server-java" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.wbdvsp2102chiminchengserverjava.DemoApplication" />
@@ -94,7 +87,9 @@
       <workItem from="1613731301737" duration="8930000" />
       <workItem from="1614150416697" duration="7000" />
       <workItem from="1616135355796" duration="725000" />
-      <workItem from="1616136100528" duration="7869000" />
+      <workItem from="1616136100528" duration="28784000" />
+      <workItem from="1616225678689" duration="12259000" />
+      <workItem from="1616419648882" duration="3349000" />
     </task>
     <servers />
   </component>
@@ -112,5 +107,16 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/wbdvsp2102chiminchengserverjava/controllers/WidgetController.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

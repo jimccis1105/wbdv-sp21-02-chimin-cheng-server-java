@@ -12,9 +12,8 @@ public class Widget {
     private String cssClass;
     private String style;
     private String value;
-
     private Long id;
-    private String topicIc;
+    private String topicId;
 
     public Long getId() {
         return id;
@@ -24,12 +23,12 @@ public class Widget {
         this.id = id;
     }
 
-    public String getTopicIc() {
-        return topicIc;
+    public String getTopicId() {
+        return topicId;
     }
 
-    public void setTopicIc(String topicIc) {
-        this.topicIc = topicIc;
+    public void setTopicId(String topicId) {
+        this.topicId = topicId;
     }
 
     public String getType() {
@@ -56,9 +55,9 @@ public class Widget {
         this.text = text;
     }
 
-    public Widget(Long id, String topicIc, String type, Integer size, String text) {
+    public Widget(Long id, String topicId, String type, Integer size, String text) {
         this.id = id;
-        this.topicIc = topicIc;
+        this.topicId = topicId;
         this.type = type;
         this.size = size;
         this.text = text;

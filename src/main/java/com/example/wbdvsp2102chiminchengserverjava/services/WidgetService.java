@@ -1,31 +1,33 @@
 package com.example.wbdvsp2102chiminchengserverjava.services;
-
 import com.example.wbdvsp2102chiminchengserverjava.models.Widget;
 import org.springframework.stereotype.Service;
-
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
 @Service
 public class WidgetService {
-    private List<Widget> widgets = new ArrayList<Widget>();
+    private List<Widget> widgets;
+    private static final String TOPIC_ID = "60589f8488285c00170782ca";
+    private static final String LOREM_IPSUM = "Lorem ipsum dolor sit amet, "
+            + "consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et "
+            + "dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation "
+            + "ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure "
+            + "dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla "
+            + "pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia "
+            + "deserunt mollit anim id est laborum.";
+    public WidgetService()
     {
-        Widget w1 = new Widget(123l, "ABC123", "HEADING", 1, "Widgets for Topic ABC123");
-        Widget w2 = new Widget(234l, "ABC123", "PARAGRAPH", 1, "Lorem Ipsum");
-        Widget w3 = new Widget(345l, "ABC234", "HEADING", 2, "Widgets for Topic ABC234");
-        Widget w4 = new Widget(456l, "ABC234", "PARAGRAPH", 1, "Lorem Ipsum");
-        Widget w5 = new Widget(567l, "ABC234", "PARAGRAPH", 1, "Lorem Ipsum");
-
-        widgets.add(w1);
-        widgets.add(w2);
-        widgets.add(w3);
-        widgets.add(w4);
-        widgets.add(w5);
+        widgets = new ArrayList<Widget>();
+        Widget testingHeading = new Widget(789l, TOPIC_ID, "HEADING", 1, "Heading not being edited (default)");
+        Widget testingParagraph = new Widget(89l, TOPIC_ID, "PARAGRAPH", 1, LOREM_IPSUM);
+        widgets.add(testingHeading);
+        widgets.add(testingParagraph);
     }
 
+
     public Widget createWidgetForTopic(String topicId, Widget widget) {
-        widget.setTopicIc(topicId);
+        widget.setTopicId(topicId);
         widget.setId((new Date()).getTime());
         widgets.add(widget);
         return widget;
@@ -34,7 +36,7 @@ public class WidgetService {
     public List<Widget> findWidgetsForTopic(String tid) {
         List<Widget> ws = new ArrayList<Widget>();
         for(Widget w: widgets) {
-            if(w.getTopicIc().equals(tid)) {
+            if(w.getTopicId().equals(tid)) {
                 ws.add(w);
             }
         }
