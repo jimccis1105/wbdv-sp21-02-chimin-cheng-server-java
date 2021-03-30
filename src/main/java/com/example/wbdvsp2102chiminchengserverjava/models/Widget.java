@@ -1,19 +1,27 @@
 package com.example.wbdvsp2102chiminchengserverjava.models;
+import javax.persistence.*;
 
+@Entity
+@Table(name="widgets")
 public class Widget {
-    private String name;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    private String topicId;
     private String type;
-    private Integer widgetOrder;
-    private String text;
-    private String src;
     private Integer size;
+    private String text;
     private Integer width;
     private Integer height;
-    private String cssClass;
-    private String style;
-    private String value;
-    private Long id;
-    private String topicId;
+    private String src;
+    private Boolean ordered;
+    //    private String name;
+    //    private Integer widgetOrder;
+    //    private String cssClass;
+    //    private String style;
+    //    private String value;
+
 
     public Long getId() {
         return id;
@@ -53,6 +61,38 @@ public class Widget {
 
     public void setText(String text) {
         this.text = text;
+    }
+
+    public Integer getWidth() {
+        return width;
+    }
+
+    public void setWidth(Integer width) {
+        this.width = width;
+    }
+
+    public Integer getHeight() {
+        return height;
+    }
+
+    public void setHeight(Integer height) {
+        this.height = height;
+    }
+
+    public String getSrc() {
+        return src;
+    }
+
+    public void setSrc(String src) {
+        this.src = src;
+    }
+
+    public Boolean getOrdered() {
+        return ordered;
+    }
+
+    public void setOrdered(Boolean ordered) {
+        this.ordered = ordered;
     }
 
     public Widget(Long id, String topicId, String type, Integer size, String text) {
