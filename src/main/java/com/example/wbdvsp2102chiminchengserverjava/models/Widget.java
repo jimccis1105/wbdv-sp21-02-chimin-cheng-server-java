@@ -7,7 +7,6 @@ public class Widget {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
     private String topicId;
     private String type;
     private Integer size;
@@ -16,11 +15,12 @@ public class Widget {
     private Integer height;
     private String src;
     private Boolean ordered;
-    //    private String name;
-    //    private Integer widgetOrder;
-    //    private String cssClass;
-    //    private String style;
-    //    private String value;
+
+//    private String name;
+//    private Integer widgetOrder;
+//    private String cssClass;
+//    private String style;
+//    private String value;
 
 
     public Long getId() {
